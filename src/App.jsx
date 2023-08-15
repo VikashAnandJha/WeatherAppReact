@@ -9,7 +9,7 @@ function App() {
   const [city, setcity] = useState('mumbai')
 
   const callWeatherAPI = async () => {
-    const url = "http://api.weatherapi.com/v1/current.json?key=bb4d98eca3e74d42aba162918231508&q=" + city + "&aqi=no"
+    const url = "https://api.weatherapi.com/v1/current.json?key=bb4d98eca3e74d42aba162918231508&q=" + city + "&aqi=no"
     console.log(url)
     let response = await fetch(url)
     let data = await response.json();
